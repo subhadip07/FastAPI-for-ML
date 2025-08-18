@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from models import Employee
+from models_var import Employee
 from typing import List
 
 employees_db: List[Employee] = []
