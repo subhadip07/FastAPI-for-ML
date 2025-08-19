@@ -3,5 +3,9 @@ uvicorn
 
 sqlalchemy
 sqlalchemy[asyncio]
-
 pydantic[email]
+
+ipykernel
+numpy
+pandas
+scikit-learn
