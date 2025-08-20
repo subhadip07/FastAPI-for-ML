@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from schemas import InputSchema, OutputSchema
 from typing import List
 from predict import make_batch_predictions, make_prediction
+import numpy
 
 app = FastAPI()
 
@@ -19,4 +20,4 @@ def predict(user_input: InputSchema):
 @app.post('/batch_prediction', response_model=List[OutputSchema])
 def batch_predict(user_input: List[InputSchema]):
     predictions = make_batch_predictions([x.model_dump() for x in user_input])
-    return [OutputSchema(predicted_price = round(predictions, 2)) for prediction in predictions]
+    return [OutputSchema(predicted_price = numpy.round(prediction, 2)) for prediction in predictions]
