@@ -11,3 +11,5 @@ pandas
 scikit-learn
 tensorflow
 keras
+
+python-multipart
