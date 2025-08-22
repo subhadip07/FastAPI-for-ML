@@ -18,3 +18,4 @@ passlib[bcrypt]
 pydantic-settings
 
 pytest
+httpx
