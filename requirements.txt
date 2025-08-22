@@ -16,3 +16,5 @@ python-multipart
 authlib 
 passlib[bcrypt]
 pydantic-settings
+
+pytest
