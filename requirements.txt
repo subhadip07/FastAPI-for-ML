@@ -19,3 +19,6 @@ pydantic-settings
 
 pytest
 httpx
+
+redis
+redis[async]
