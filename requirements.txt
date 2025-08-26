@@ -24,3 +24,4 @@ redis
 redis[async]
 snakeviz
 line_profiler
+locust
